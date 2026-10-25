@@ -1,0 +1,50 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-8.4.2, pluggy-1.7.0 -- C:\Users\abinash\Downloads\VOI TASK 2 VARSHA\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\abinash\Downloads\VOI TASK 2 VARSHA
+plugins: anyio-4.15.1
+collecting ... collected 41 items
+
+tests/test_main.py::test_health_check PASSED                             [  2%]
+tests/test_main.py::test_summary_returns_total_amount PASSED             [  4%]
+tests/test_main.py::test_summary_after_create PASSED                     [  7%]
+tests/test_main.py::test_summary_after_delete PASSED                     [  9%]
+tests/test_main.py::test_get_existing_expense PASSED                     [ 12%]
+tests/test_main.py::test_get_missing_expense_returns_404 PASSED          [ 14%]
+tests/test_main.py::test_get_with_text_id_returns_400 PASSED             [ 17%]
+tests/test_main.py::test_list_all_expenses PASSED                        [ 19%]
+tests/test_main.py::test_filter_by_category PASSED                       [ 21%]
+tests/test_main.py::test_filter_ignores_upper_lower_case PASSED          [ 24%]
+tests/test_main.py::test_filter_with_no_match_returns_empty_list PASSED  [ 26%]
+tests/test_main.py::test_create_expense PASSED                           [ 29%]
+tests/test_main.py::test_created_expense_can_be_fetched PASSED           [ 31%]
+tests/test_main.py::test_create_trims_spaces_and_rounds_amount PASSED    [ 34%]
+tests/test_main.py::test_create_rejects_negative_amount PASSED           [ 36%]
+tests/test_main.py::test_create_rejects_zero_amount PASSED               [ 39%]
+tests/test_main.py::test_create_rejects_too_large_amount PASSED          [ 41%]
+tests/test_main.py::test_create_rejects_text_as_amount PASSED            [ 43%]
+tests/test_main.py::test_create_rejects_invalid_date PASSED              [ 46%]
+tests/test_main.py::test_create_rejects_impossible_date PASSED           [ 48%]
+tests/test_main.py::test_create_rejects_week_date_format PASSED          [ 51%]
+tests/test_main.py::test_create_rejects_empty_description PASSED         [ 53%]
+tests/test_main.py::test_create_rejects_spaces_only_description PASSED   [ 56%]
+tests/test_main.py::test_create_rejects_too_long_description PASSED      [ 58%]
+tests/test_main.py::test_create_rejects_missing_field PASSED             [ 60%]
+tests/test_main.py::test_create_rejects_unknown_field PASSED             [ 63%]
+tests/test_main.py::test_failed_create_does_not_store_anything PASSED    [ 65%]
+tests/test_main.py::test_update_only_amount PASSED                       [ 68%]
+tests/test_main.py::test_update_date PASSED                              [ 70%]
+tests/test_main.py::test_update_rejects_negative_amount PASSED           [ 73%]
+tests/test_main.py::test_update_rejects_invalid_date PASSED              [ 75%]
+tests/test_main.py::test_update_rejects_null_description PASSED          [ 78%]
+tests/test_main.py::test_update_rejects_null_amount PASSED               [ 80%]
+tests/test_main.py::test_update_rejects_null_date PASSED                 [ 82%]
+tests/test_main.py::test_update_rejects_empty_body PASSED                [ 85%]
+tests/test_main.py::test_update_rejects_unknown_field PASSED             [ 87%]
+tests/test_main.py::test_update_missing_expense_returns_404 PASSED       [ 90%]
+tests/test_main.py::test_delete_expense PASSED                           [ 92%]
+tests/test_main.py::test_deleted_expense_is_gone PASSED                  [ 95%]
+tests/test_main.py::test_delete_missing_expense_returns_404 PASSED       [ 97%]
+tests/test_main.py::test_unexpected_error_returns_500_without_details PASSED [100%]
+
+============================= 41 passed in 3.01s ==============================
